@@ -4,7 +4,7 @@ title: "Speaking of Allyship with Beth Chandler of YW Boston"
 date: 2023-02-08
 excerpt: "In this episode, Lisa Prior, President of The Boston Club, is joined by Beth Chandler, President and CEO of YW Boston, to discuss allyship, intersectionality, and embracing difference on teams."
 ---
-<p><img src="/assets/images/Screen-Shot-2023-02-08-at-7.16.45-PM-640x363.png" alt="Speaking of Allyship" width="640" height="363" /></p>
+<p><img src="{{ site.baseurl }}/assets/images/Screen-Shot-2023-02-08-at-7.16.45-PM-640x363.png" alt="Speaking of Allyship" width="640" height="363" /></p>
 
 Tune in here: [Listen on Buzzsprout](https://www.buzzsprout.com/2079718/12127125)
 
