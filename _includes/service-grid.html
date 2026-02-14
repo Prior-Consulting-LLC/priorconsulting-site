@@ -1,0 +1,10 @@
+<div class="services">
+<div class="services-a">
+	<ul>
+	{% for service in site.data.services %}<li><div class="li-a"><a href="{{ service.url | relative_url }}">
+		<div class="service-icon" style="color:{{ service.color }}"><img width="{{ service.icon_width }}" height="{{ service.icon_height }}" src="{{ service.icon | relative_url }}" alt="{{ service.title }}" /></div>
+		<h2 class="service-title" style="color:{{ service.color }}">{{ service.title }}</h2>
+		<div class="service-desc">{{ service.description }}</div>
+	</a></div></li>{% endfor %}	</ul>
+</div>
+</div>

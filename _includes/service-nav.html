@@ -1,0 +1,3 @@
+{% if page.nav_items %}
+<div class="navlinks"><ul>{% for item in page.nav_items %}<li><a href="#{{ item.id }}"><strong>{{ item.title }}</strong></a></li>{% endfor %}</ul></div>
+{% endif %}

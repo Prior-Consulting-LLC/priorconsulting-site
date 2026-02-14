@@ -20,6 +20,35 @@ layout: default
 <div id="body">
 <div class="container clearfix notop nobot">
 	<div class="content">
+		{% include service-grid.html %}
+
+		<div class="featboxes">
+		<div class="featboxes-a">
+			<section class="featbox">
+			<div class="featbox-a">
+				<header class="boxheader">
+					<div class="boximage"><a href="{{ '/about/' | relative_url }}"><img width="551" height="367" src="{{ '/assets/images/lisa-prior-3-551x367.jpg' | relative_url }}" alt="Lisa Prior" /></a></div>
+				</header>
+				<div class="boxcontent notop nobot">
+					<p><strong>Lisa Prior, Founder &amp; CEO</strong> has steered organizational change and leadership development for two decades for leading companies and executives to help them create the culture they need to achieve the results they want.</p>
+				</div>
+			</div>
+			</section>
+			<section class="featbox">
+			<div class="featbox-a">
+				<header class="boxheader">
+					<div class="boximage"><a href="{{ '/producer-manager-leader/' | relative_url }}"><img width="551" height="367" src="{{ '/assets/images/producer-manager-leader.png' | relative_url }}" alt="Producer Manager Leader" /></a></div>
+				</header>
+				<div class="boxcontent notop nobot">
+					<p>Producer/Manager/Leader — how can you do it all and still succeed? Our new PML app will help you identify and triage your different roles.</p>
+					<p><strong><a href="{{ '/producer-manager-leader/' | relative_url }}" style="color:#f1a149">LEARN MORE</a></strong></p>
+					<div class="boxicon"><a href="{{ '/producer-manager-leader/' | relative_url }}"><img width="48" height="48" src="{{ '/assets/images/pml-icon-1-48x48.png' | relative_url }}" alt="PML App" /></a></div>
+				</div>
+			</div>
+			</section>
+		</div>
+		</div>
+
 		{{ content }}
 	</div>
 </div>

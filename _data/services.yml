@@ -1,0 +1,31 @@
+- title: Moving Self
+  url: /services/moving-self/
+  icon: /assets/images/moving-self-70x70.png
+  icon_width: 70
+  icon_height: 70
+  color: "#f1a149"
+  description: "Executive Coaching & Leadership Assessments"
+
+- title: Moving Others
+  url: /services/moving-others/
+  icon: /assets/images/moving-others-80x70.png
+  icon_width: 80
+  icon_height: 70
+  color: "#0b83c7"
+  description: "Expert facilitation & team coaching"
+
+- title: Moving Beyond
+  url: /services/moving-beyond/
+  icon: /assets/images/moving-beyond-87x70.png
+  icon_width: 87
+  icon_height: 70
+  color: "#8c2145"
+  description: "Helping executives transition beyond work"
+
+- title: Moving Your Organization
+  url: /services/moving-your-organization/
+  icon: /assets/images/moving-your-organisation-70x70.png
+  icon_width: 70
+  icon_height: 70
+  color: "#d22831"
+  description: "Culture, design, strategy, & leadership programs"
