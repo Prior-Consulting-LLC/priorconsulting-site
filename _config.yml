@@ -1,7 +1,7 @@
 title: Prior Consulting
 description: "Lisa Prior, executive leadership coach and change consultant, helps leaders create distinctive work cultures that engage employees and boost bottom line."
-url: "https://prior-consulting-llc.github.io"
-baseurl: "/priorconsulting-site"
+url: "https://priorconsulting.com"
+baseurl: ""
 
 permalink: /blog/:title/
 
