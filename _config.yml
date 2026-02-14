@@ -1,0 +1,26 @@
+title: Prior Consulting
+description: "Lisa Prior, executive leadership coach and change consultant, helps leaders create distinctive work cultures that engage employees and boost bottom line."
+url: "https://www.priorconsulting.com"
+baseurl: ""
+
+permalink: /blog/:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: page
+
+plugins:
+  - jekyll-seo-tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md

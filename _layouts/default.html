@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0,width=device-width" />
+	{% seo %}
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i" />
+	<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" />
+	<link rel="shortcut icon" href="{{ '/assets/images/favicon.ico' | relative_url }}" type="image/x-icon" />
+</head>
+<body{% if page.body_class %} class="{{ page.body_class }}"{% endif %}>
+<div id="fullwrap">
+{% include header.html %}
+
+{{ content }}
+
+{% include subscribe-bar.html %}
+{% include footer.html %}
+</div>
+{% include buy-popup.html %}
+<script>
+// Mobile menu toggle
+document.addEventListener('DOMContentLoaded', function() {
+	var toggle = document.getElementById('togglemenu');
+	if (toggle) {
+		toggle.addEventListener('click', function(e) {
+			e.preventDefault();
+			document.body.classList.toggle('menuopen');
+		});
+	}
+	// Submenu toggles for mobile
+	document.querySelectorAll('#menu .has-children > a').forEach(function(link) {
+		var plusminus = link.querySelector('.plusminus');
+		if (plusminus) {
+			plusminus.addEventListener('click', function(e) {
+				e.preventDefault();
+				e.stopPropagation();
+				link.parentElement.classList.toggle('open');
+			});
+		}
+	});
+	// Buy book popup
+	document.querySelectorAll('a[href="#buybook"]').forEach(function(link) {
+		link.addEventListener('click', function(e) {
+			e.preventDefault();
+			document.querySelector('.popupoverlay').style.display = 'block';
+			document.querySelector('.buypopup').style.display = 'block';
+		});
+	});
+	// Close popup
+	document.querySelectorAll('.popup .close').forEach(function(btn) {
+		btn.addEventListener('click', function(e) {
+			e.preventDefault();
+			document.querySelector('.popupoverlay').style.display = 'none';
+			this.closest('.popup').style.display = 'none';
+		});
+	});
+	var overlay = document.querySelector('.popupoverlay');
+	if (overlay) {
+		overlay.addEventListener('click', function() {
+			this.style.display = 'none';
+			document.querySelectorAll('.popup').forEach(function(p) { p.style.display = 'none'; });
+		});
+	}
+});
+</script>
+</body>
+</html>

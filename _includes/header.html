@@ -1,0 +1,42 @@
+<div id="header">
+	<div id="logobar">
+	<div class="container">
+		<div id="logo"><a href="{{ '/' | relative_url }}"><img src="{{ '/assets/images/prior-consulting.svg' | relative_url }}" width="633" height="96" alt="Prior Consulting - Releasing Potential, Producing Results" /></a></div>
+	</div>
+	</div>
+	<div id="menubar">
+	<div class="container">
+		<div id="contactinfo">
+			<ul>
+				<li><a href="mailto:lisa@priorconsulting.com" target="_blank"><span class="screen-reader-text">Email</span></a></li><!--
+				--><li><a href="https://twitter.com/Priorconsulting" target="_blank"><span class="screen-reader-text">Twitter</span></a></li><!--
+				--><li><a href="https://www.linkedin.com/in/lisaprior/" target="_blank"><span class="screen-reader-text">LinkedIn</span></a></li>
+			</ul>
+		</div>
+
+		<div id="menu">
+			<div id="togglemenu"><a href="#"><span>Menu</span></a></div>
+			<ul>
+				<li{% if page.url == '/about/' %} class="current-menu-item"{% endif %}><a href="{{ '/about/' | relative_url }}"><span>About</span></a></li>
+				<li class="has-children{% if page.url contains '/services/' %} current-menu-ancestor{% endif %}"><a href="{{ '/services/' | relative_url }}"><span>Services<span class="plusminus"></span></span></a>
+					<ul class="sub-menu">
+						<li{% if page.url == '/services/moving-self/' %} class="current-menu-item"{% endif %}><a href="{{ '/services/moving-self/' | relative_url }}"><span>Moving Self</span></a></li>
+						<li{% if page.url == '/services/moving-others/' %} class="current-menu-item"{% endif %}><a href="{{ '/services/moving-others/' | relative_url }}"><span>Moving Others</span></a></li>
+						<li{% if page.url == '/services/moving-beyond/' %} class="current-menu-item"{% endif %}><a href="{{ '/services/moving-beyond/' | relative_url }}"><span>Moving Beyond</span></a></li>
+						<li{% if page.url == '/services/moving-your-organization/' %} class="current-menu-item"{% endif %}><a href="{{ '/services/moving-your-organization/' | relative_url }}"><span>Moving Your Organization</span></a></li>
+					</ul>
+				</li>
+				<li{% if page.url == '/producer-manager-leader/' %} class="current-menu-item"{% endif %}><a href="{{ '/producer-manager-leader/' | relative_url }}"><span>PML</span></a></li>
+				<li class="has-children{% if page.url contains '/resources/' %} current-menu-ancestor{% endif %}"><a href="{{ '/resources/' | relative_url }}"><span>Resources<span class="plusminus"></span></span></a>
+					<ul class="sub-menu">
+						<li><a href="{{ '/resources/book/' | relative_url }}"><span>Book</span></a></li>
+						<li><a href="{{ '/assets/pdf/power-cards.pdf' | relative_url }}" target="_blank"><span>Your Best Self Card Set</span></a></li>
+					</ul>
+				</li>
+				<li{% if page.url contains '/blog/' or page.layout == 'post' %} class="current-menu-item"{% endif %}><a href="{{ '/blog/' | relative_url }}"><span>Blog: Moving Ahead</span></a></li>
+				<li{% if page.url == '/contact/' %} class="current-menu-item"{% endif %}><a href="{{ '/contact/' | relative_url }}"><span>Contact</span></a></li>
+			</ul>
+		</div>
+	</div>
+	</div>
+</div>

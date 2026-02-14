@@ -1,0 +1,36 @@
+---
+layout: default
+---
+<header id="banner">
+<div class="container">
+	<div class="banner-wrap">
+		<div class="banner-titles">
+			<h1 class="pagetitle">Blog: Moving Ahead</h1>
+		</div>
+	</div>
+</div>
+</header>
+<style>
+#banner {background-color:#54274F;}
+.intro {color:#54274F;}
+.content a {color:#54274F;}
+</style>
+
+<div id="body">
+<div class="container clearfix notop nobot">
+	<div id="main">
+	<div id="main-a">
+	<div class="content">
+		<article class="post">
+			<h2 class="title">{{ page.title }}</h2>
+			<div class="date">{{ page.date | date: "%B %-d, %Y" }}</div>
+			{{ content }}
+		</article>
+	</div>
+	</div>
+	</div>
+	<div id="sidebar">
+		{% include sidebar.html %}
+	</div>
+</div>
+</div>

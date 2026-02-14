@@ -1,0 +1,31 @@
+---
+layout: default
+---
+{% if page.banner_image or page.banner_icon %}
+<header id="banner"{% if page.banner_image %} style="background-image:url({{ page.banner_image | relative_url }})"{% endif %}>
+<div class="container">
+	<div class="banner-wrap">
+		{% if page.banner_icon %}<div class="banner-icon"><img width="180" height="180" src="{{ page.banner_icon | relative_url }}" alt="" /></div>{% endif %}
+		<div class="banner-titles">
+			<h1 class="pagetitle">{{ page.banner_title | default: page.title }}</h1>
+			{% if page.subtitle %}<p class="page-subtitle">{{ page.subtitle }}</p>{% endif %}
+		</div>
+	</div>
+</div>
+</header>
+{% endif %}
+{% if page.page_color %}
+<style>
+#banner {background-color:{{ page.page_color }};}
+.intro {color:{{ page.page_color }};}
+.content a {color:{{ page.page_color }};}
+</style>
+{% endif %}
+
+<div id="body">
+<div class="container clearfix notop nobot">
+	<div class="content">
+		{{ content }}
+	</div>
+</div>
+</div>

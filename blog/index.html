@@ -1,0 +1,41 @@
+---
+layout: default
+title: "Blog: Moving Ahead"
+permalink: /blog/
+---
+<header id="banner">
+<div class="container">
+	<div class="banner-wrap">
+		<div class="banner-titles">
+			<h1 class="pagetitle">Blog: Moving Ahead</h1>
+		</div>
+	</div>
+</div>
+</header>
+<style>
+#banner {background-color:#54274F;}
+.intro {color:#54274F;}
+.content a {color:#54274F;}
+</style>
+
+<div id="body">
+<div class="container clearfix notop nobot">
+	<div id="main">
+	<div id="main-a">
+	<div class="content blog-listing">
+		{% for post in site.posts %}
+		<article class="post">
+			<h2 class="title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+			<div class="date">{{ post.date | date: "%B %-d, %Y" }}</div>
+			{% if post.excerpt %}<div class="excerpt">{{ post.excerpt | strip_html | truncatewords: 40 }}</div>{% endif %}
+			<div class="read-more"><a href="{{ post.url | relative_url }}">Read more &raquo;</a></div>
+		</article>
+		{% endfor %}
+	</div>
+	</div>
+	</div>
+	<div id="sidebar">
+		{% include sidebar.html %}
+	</div>
+</div>
+</div>
